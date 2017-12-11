@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "ENV=develop nodemon --exec babel-node src/server",
-    "debug": "ENV=develop nodemon --inspect --exec babel-node src/server"
+    "debug": "ENV=develop nodemon --inspect --exec babel-node src/server",
+    "start": "pm2 start bin/pm2.config.js"
   },
   "dependencies": {
     "koa": "^2.3.0",

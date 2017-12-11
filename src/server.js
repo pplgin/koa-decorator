@@ -13,13 +13,10 @@ const { helper } = require('./middlewares/helper')
 import RegisterRouter from './common/RouterRegister'
 
 
-console.log('helper', helper)
-
-// middleware
-
 import Home from './controllers/HomeController'
 import File from './controllers/FileController'
 
+// middleware
 app.use(session())
 app.use(bodyParser())
 
@@ -28,8 +25,7 @@ app.use(views(__dirname + '/views', {
   map: {
     html: 'swig',
     swig: 'swig'
-  },
-  extension: 'swig'
+  }
 }));
 
 // session
